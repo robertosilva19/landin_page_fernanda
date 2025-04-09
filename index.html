@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fernanda Imóveis | Santa Cecília</title>
+  <link rel="shortcut icon" href="./assets/Favicon.svg" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/cabecalho.css">
+  <link rel="stylesheet" href="./styles/container--cards.css">
+  <link rel="stylesheet" href="./styles/container--contato.css">
+  <link rel="stylesheet" href="./styles/container--inscricao.css">
+  <link rel="stylesheet" href="./styles/container--primeiro.css">
+  <link rel="stylesheet" href="./styles/container--secao.css">
+  <link rel="stylesheet" href="./styles/rodape.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&family=Open+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --fonte: "Montserrat", 'Krona One', 'Open Sans', sans-serif;
+      --gradiente: linear-gradient(180deg, #F8F9FA 0%, rgb(255, 255, 255) 80%);
+      --gradiente-card: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(30, 58, 95, 0.05) 100%);
+      --verde-cta: #2ECC71;
+      --azul-principal: #1E3A5F;
+      --cinza-claro: #F8F9FA;
+      --cinza-medio: #CED4DA;
+      --branco: #FFFFFF;
+      --verde-claro: var(--verde-cta);
+      --azul-botao: var(--verde-cta);
+      --lilas-claro: #A6B6D9;
+      --lilas-escuro: var(--azul-principal);
+      --azul-escuro: var(--azul-principal);
+      font-size: 62.5%;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Parte 1 - Apresentação do produto -->
+  <section class="container py-5">
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-4">
+        <h1 class="fw-bold">Seu novo lar em Santa Cecília</h1>
+        <p>2 Dormitórios com varanda, lazer completo e a 450m do Metrô. Viva com praticidade e estilo em uma das regiões mais desejadas de São Paulo.</p>
+        <div class="ratio ratio-16x9 mb-3">
+          <iframe src="https://www.youtube.com/embed/SEU_VIDEO_ID" title="Vídeo do Projeto" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card shadow-sm p-4">
+          <h4 class="mb-3">Cadastre-se para receber mais informações</h4>
+          <form>
+            <input type="text" class="form-control mb-2" placeholder="Seu nome" required>
+            <input type="email" class="form-control mb-2" placeholder="Seu e-mail" required>
+            <input type="tel" class="form-control mb-3" placeholder="WhatsApp" required>
+            <button class="btn btn-success w-100">Quero saber mais</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Parte 2 - Apresentação da corretora -->
+  <section class="bg-light py-5 text-center">
+    <div class="container">
+      <img src="./assets/corretora.jpg" class="rounded-circle mb-3" width="120" alt="Corretora Fernanda">
+      <h2>Fernanda Imóveis</h2>
+      <p>Com mais de X anos de experiência, ajudo você a realizar o sonho do imóvel ideal com segurança e atenção total.</p>
+      <div class="bg-white p-3 mt-4 rounded shadow-sm mx-auto" style="max-width: 500px;">
+        ⭐⭐⭐⭐⭐
+        <p class="mb-0">"Atendimento excelente! Me senti segura em todo o processo."</p>
+        <small>— Cliente feliz</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- Parte 3 - Detalhes do projeto -->
+  <section class="container py-5">
+    <h2 class="text-center mb-4">Descubra as vantagens de morar em Santa Cecília</h2>
+
+    <div id="carouselProjeto" class="carousel slide mb-4" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./assets/fachada.jpg" class="d-block w-100" alt="Fachada">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/lazer.jpg" class="d-block w-100" alt="Lazer">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjeto" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselProjeto" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <p>Empreendimento moderno com coworking, salão de festas, pet care, playground, lavanderia compartilhada, e muito mais.</p>
+
+    <table class="table table-bordered mt-3">
+      <thead class="table-success">
+        <tr>
+          <th>Etapa</th>
+          <th>Valor</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Sinal</td>
+          <td>R$ 5.000,00</td>
+        </tr>
+        <tr>
+          <td>Parcelas mensais</td>
+          <td>R$ 800,00 (24x)</td>
+        </tr>
+        <tr>
+          <td>Financiamento bancário</td>
+          <td>R$ 210.000,00</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <form class="mt-4">
+      <h4 class="mb-3">Receba a tabela completa por WhatsApp</h4>
+      <input type="text" class="form-control mb-2" placeholder="Nome" required>
+      <input type="tel" class="form-control mb-2" placeholder="WhatsApp" required>
+      <button class="btn btn-success w-100">Quero a tabela</button>
+    </form>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+      <p class="mb-1">Corretora Fernanda | CRECI: 123456-F</p>
+      <p class="mb-1">WhatsApp: <a href="https://wa.me/SEU_NUMERO" class="text-success">Clique aqui para falar</a></p>
+      <div class="d-flex justify-content-center gap-3 mb-2">
+        <a href="#" class="text-white">Instagram</a>
+        <a href="#" class="text-white">TikTok</a>
+      </div>
+      <p class="mb-0">© 2025 Fernanda Imóveis</p>
+        <p class="mb-0">Todos os direitos reservados.</p>
+        <p class="mb-0">Desenvolvido por<a href="https://www.seusite.com" class="text-white">Roberto Silva</a></p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+
+<!-- Fim do código -->
+<!--
+  Este é um exemplo de página de vendas para o Vitto Santa Cecília, com foco em conversão e apresentação clara do produto.
+  O código HTML inclui seções para apresentação do produto, detalhes do projeto e informações sobre a corretora.
+  As imagens e vídeos devem ser substituídos pelos reais do projeto.
+  O formulário de contato e a tabela de preços são interativos, incentivando o usuário a se cadastrar para mais informações.
+  O rodapé contém informações de contato e links para redes sociais.
+  Certifique-se de substituir os IDs e links de vídeo, imagens e WhatsApp pelos corretos antes de publicar.

@@ -1,0 +1,32 @@
+
+.container__primeiro {
+    padding: 6.4rem 1.6rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.4rem;
+  }
+  
+  .container__primeiro--texto h1 {
+    font-size: 3.1rem;
+    font-family: "Krona One", sans-serif;
+    color: var(--azul-principal);
+  }
+  
+  .container__primeiro--texto-botao {
+    width: 100%;
+    max-width: 32rem;
+    height: 5.6rem;
+    color: white;
+    border: none;
+    border-radius: 2.8rem;
+    background: var(--verde-cta);
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 auto;
+  }
+    .container__primeiro--texto-botao:hover {
+        cursor: pointer;
+        background: var(--verde-cta-hover);
+    }  
